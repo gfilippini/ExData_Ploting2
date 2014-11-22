@@ -25,5 +25,5 @@ options (scipen=999)
 ## plot 1
 png("./ExData_Ploting2/figures/plot1.png",width=480, height=480)
 plot(totalemissions,type='l',xlab="Year",ylab=expression('Total PM'[2.5]*" Emission"),
-     main=expression('PM'[2.5]*" emssion over the years 1999 - 2008"))
+     main=expression('PM'[2.5]*" emission over the years 1999 - 2008"))
 dev.off()
