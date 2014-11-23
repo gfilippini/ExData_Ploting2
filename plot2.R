@@ -17,7 +17,7 @@ if (!"SCC" %in% ls()) {
 
 
 ## creates total emissions base for plot - includes the Baltimore City (fips == "24510") filter
-totalemissions<-aggregate(NEI[NEI$fips==24510,]$Emissions,list(NEI[NEI$fips==24510,]$year),FUN="sum")
+totalemissions<-aggregate(NEI[NEI$fips=="24510",]$Emissions,list(NEI[NEI$fips=="24510",]$year),FUN="sum")
 
 ## options to take off scientifc notation for high values
 options (scipen=999)

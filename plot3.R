@@ -18,7 +18,7 @@ if (!"SCC" %in% ls()) {
 }
 
 ## substing data with Baltimore City information
-BC.info <- NEI[NEI$fips==24510,]
+BC.info <- NEI[NEI$fips=="24510",]
 
 ## load ggplot2 library
 library(ggplot2)

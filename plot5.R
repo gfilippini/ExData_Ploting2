@@ -18,7 +18,7 @@ if (!"SCC" %in% ls()) {
 SCC.vehic <- SCC[grep("Vehicles",SCC$EI.Sector), ]
 
 ## substing NEI data for Baltimore City
-NEI.BC <- NEI[NEI$fips==24510,]
+NEI.BC <- NEI[NEI$fips=="24510",]
 
 ## merging information
 NEI.SCC.vehicBC <- merge(NEI.BC,SCC.vehic,by="SCC")
