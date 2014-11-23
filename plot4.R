@@ -15,7 +15,7 @@ if (!"SCC" %in% ls()) {
 }
 
 ## subseting SCC data for Coal emissions
-SCC.coal <- SCC[grep("Coal",SCC$EI.Sector)]
+SCC.coal <- SCC[grep("Coal",SCC$EI.Sector),]
 
 ## bringing Category information
 NEI.SCC <- merge(NEI,SCC.coal,by="SCC")
